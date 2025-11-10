@@ -12,6 +12,7 @@ struct DeleteButtonMicroInteractionApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .containerBackground(.white, for: .window)
         }
     }
 }

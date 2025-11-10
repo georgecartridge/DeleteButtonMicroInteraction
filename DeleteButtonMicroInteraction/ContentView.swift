@@ -10,12 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TimedActionButton(
+                title: "Delete Account",
+                cancelTitle: "Cancel Account",
+            ) {
+                print("Action triggered")
+            }
         }
         .padding()
+        .frame(minWidth: 400, minHeight: 400)
     }
 }
 
