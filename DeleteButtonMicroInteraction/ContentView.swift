@@ -12,7 +12,7 @@ struct ContentView: View {
         VStack {
             TimedActionButton(
                 title: "Delete Account",
-                cancelTitle: "Cancel Account",
+                cancelTitle: "Cancel Deletion",
             ) {
                 print("Action triggered")
             }
